@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link id="pagestyle" rel="stylesheet" href="../css/light.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 style="float: left;" onclick="window.open('https://www.ripik.ai', '_blank');">Ripik.ai</h2>
+        <i title="logout" class="material-icons" style="float: right;" onclick="logOut();">logout</i>
+        <i title="dark mode" class="material-icons-outlined" style="float: right;" onclick="switchDarkMode('..');">dark_mode</i>
+        <i title="Create new load balancer" class="material-icons-outlined" style="font-size: 36px; float: right;" onclick="createLoadBalancer();">add</i>
+    </div>
+
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="loadBalancer" id="savedLoadBalancers">
+        <div class="wrapper" id="loadBalancers">
+            <h1>Saved load balancers</h1>
+            <div class="carousel" id="listLoadBalancers"></div>
+        </div>
+    </div>
+    <script src="../scripts/url.js"></script>
+    <script src="../scripts/darkMode.js"></script>
+    <script src="../scripts/fetchData.js"></script>
+    <script src="../scripts/refresh.js"></script>
+    <script src="../scripts/logout.js"></script>
+    <script src="../scripts/home.js"></script>
+    <script>setMode('..')</script>
+</body>
+</html>

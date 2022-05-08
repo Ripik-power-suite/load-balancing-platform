@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sign-up</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link id="pagestyle" rel="stylesheet" href="../css/light.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 style="float: left;">Load balancing tool</h2>
+        <i class="material-icons" style="font-size: 24px; float: right; padding: 20px;" onclick="switchDarkMode('..');">dark_mode</i>
+        <h2 style="float: right;">Ripik.ai</h2>
+    </div>
+
+    <div class="wrapper">
+        <div class="login-box" id="emailBox">
+            <h2>Sign-up</h2>
+            <form onsubmit="registerUser(); return false;">
+              <div class="user-box">
+                <input type="email" id="email" required>
+                <label>Email id</label>
+              </div>
+              <div style='display: flex; justify-content: space-around;'>
+                <input type="submit" value="Register">
+                <input type="button" value="Log In" onclick="window.location.replace('../index.html')">
+              </div>
+            </form>
+        </div>
+    </div>
+    <script src="../scripts/url.js"></script>
+    <script src="../scripts/darkMode.js"></script>
+    <script src="../scripts/fetchData.js"></script>
+    <script src="../scripts/signup.js"></script>
+    <script>setMode('..')</script>
+</body>
+</html>

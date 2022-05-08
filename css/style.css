@@ -1,0 +1,297 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;   
+    text-align: center; 
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar h2, .navbar h1 {
+    padding: 5px 5px 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar i {
+    font-size: 32px;
+    padding: 15px 20px;
+    transition: .3s all ease;
+}
+
+.navbar h2, .navbar h1, .navbar i {
+    cursor: pointer;
+}
+
+.navbar i:hover {}
+
+.navbar h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -15px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar h2:hover::before {
+    transform: scaleX(1);
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.login-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 40%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+  
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+}
+  
+.login-box .user-box, .login-box .select-box {
+    position: relative;
+}
+  
+.login-box .user-box input, .login-box .select-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: left;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .select-box label {
+    position: absolute;
+    top:-20px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 12px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+  
+form input[type="submit"], input[type="button"] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    transition: all 0.15s ease-in-out;
+}
+
+form input[type="submit"]:hover, input[type="button"]:hover {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card {
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+}
+  
+.card h2 {
+    margin: 0 0 30px;
+    padding: 0px 20px;
+    text-align: center;
+}
+  
+.card .user-box, .card .select-box {
+    position: relative;
+}
+  
+.card .user-box input, .card .select-box select {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: left;
+}
+
+.card .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.card .select-box label {
+    position: absolute;
+    top:-20px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 12px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.card .user-box input:focus ~ label,
+.card .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.loadBalancer {
+    width: 95%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.pillbox {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: auto;
+    transition: all 0.15s ease-in-out;
+}
+
+.pillbox:hover {
+    cursor: pointer;
+}
+
+input[type="number"], select {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border: none;
+    table-layout:fixed;
+    width:100%;
+}
+
+tr th {
+    font-size: 18px;
+    word-wrap: break-word;
+    border: none;
+    padding: 8px;
+}
+
+tr {
+    border: none;
+}
+
+td {
+    border: none;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+
+  margin: 40px auto 0 auto;
+  width: 100%;
+  /* height: fit-content; */
+  
+  /* border: solid #F3E6FF .5px; */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.item {
+    min-width: 30vw;
+    margin: 15px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 0.15s ease-in-out;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item h1 {
+    padding: 0px 0px 0px 20px;
+}
+
+.item h4 {
+    padding: 0px 0px 0px 20px;
+}

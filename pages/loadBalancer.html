@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Output</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link id="pagestyle" rel="stylesheet" href="../css/light.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+</head>
+
+<body>
+    <div class="navbar">
+      <h2 style="float: left;" onclick="window.location.replace('./home.html');">
+        <i class="material-icons" style="font-size: 24px; float: left; padding: 0px;">arrow_back_ios</i>Home  
+      </h2>
+      <i title="logout" class="material-icons" style="float: right;" onclick="logOut();">logout</i>
+      <i title="dark mode" class="material-icons-outlined" style="float: right;" onclick="switchDarkMode('..');">dark_mode</i>
+      <i title="Delete load balancer" class="material-icons-outlined" style="float: right;" onclick="deleteLoadBalancer();">delete_outline</i>
+  </div>
+
+  <br><br>
+  <br><br>
+  <div class="wrapper" id="balancer">
+    <div class="loadBalancer" id="balancerInput">
+      <h2 id="heading">Load balancer</h2>
+      <form id="form" onsubmit="process(); return false;">
+      </form>
+    </div>
+    <div class="loadBalancer" id="balancerOutput" style="display: none;">
+    </div>
+  </div>
+    <script src="../scripts/url.js"></script>
+    <script src="../scripts/darkMode.js"></script>
+    <script src="../scripts/fetchData.js"></script>
+    <script src="../scripts/refresh.js"></script>
+    <script src="../scripts/logout.js"></script>
+    <script src="../scripts/loadBalancer.js"></script>
+    <script>setMode('..')</script>
+</body>
+</html>

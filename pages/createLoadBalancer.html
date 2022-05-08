@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Create load balancer</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link id="pagestyle" rel="stylesheet" href="../css/light.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 style="float: left;" onclick="window.location.replace('./home.html');">
+          <i class="material-icons" style="font-size: 24px; float: left; padding: 0px;">arrow_back_ios</i>Home  
+        </h2>
+        <i title="logout" class="material-icons" style="font-size: 24px; float: right; padding: 20px 10px;" onclick="logOut();">logout</i>
+        <i title="dark mode" class="material-icons-outlined" style="font-size: 24px; float: right; padding: 20px 10px;" onclick="switchDarkMode('..');">dark_mode</i>
+      </div>
+
+      <br><br>
+      <br><br>
+      <div class="wrapper">
+        <!-- <div class="card">
+            <h2>Production & Power plants</h2> -->
+            <div class="login-box" id="step0">
+                <h2>Load Balancer</h2>
+                <form onsubmit="step0(); return false;">
+                  <div class="user-box">
+                    <input type="text" id="companyName" required>
+                    <label>Company</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="text" id="BalancerName" required>
+                    <label>Balancer name</label>
+                  </div>
+                  <div style='display: flex; justify-content: space-around;'>
+                    <input type="submit" value="Next">
+                  </div>
+                </form>
+            </div>
+            <div class="login-box" id="step1" style="display: none;">
+                <h2>Production & power plants</h2>
+                <form onsubmit="step1(); return false;">
+                  <div class="user-box">
+                    <input type="number" id="numProdPlants" required>
+                    <label>Number of production plants</label>
+                  </div>
+                  <div class="user-box">
+                    <input type="number" id="numPowerPlants" required>
+                    <label>Number of power plants</label>
+                  </div>
+                  <div style='display: flex; justify-content: space-around;'>
+                    <input type='button' value='Back' onclick='back0()'>
+                    <input type="submit" value="Next">
+                  </div>
+                </form>
+            </div>
+        <!-- </div> -->
+            <div class="login-box" id="step2" style="display: none;">
+                <h2>Production plants</h2>
+                <form id="productionPlants" onsubmit="step2(); return false;">
+                </form>
+            </div>
+            <div class="login-box" id="step3" style="display: none;">
+                <h2>Power plants</h2>
+                <form id="powerPlants" onsubmit="step3(); return false;">
+                </form>
+            </div>
+            <div class="loadBalancer" id="finalStep" style="display: none;">
+                <h2 id="heading">Load balancer</h2>
+                <form id="finalForm" onsubmit="saveLoadBalancer(); return false;">
+                </form>
+            </div>
+    </div>
+    <script src="../scripts/url.js"></script>
+    <script src="../scripts/darkMode.js"></script>
+    <script src="../scripts/fetchData.js"></script>
+    <script src="../scripts/refresh.js"></script>
+    <script src="../scripts/logout.js"></script>
+    <script src="../scripts/createLoadBalancer.js"></script>
+    <script>setMode('..')</script>
+</body>
+</html>

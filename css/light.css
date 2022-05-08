@@ -1,0 +1,113 @@
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.navbar i:hover {
+    background-color: #f5f5f5;
+}
+
+.navbar h2::before {
+    background-color: #000;
+}
+
+.login-box {
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+  
+.login-box .user-box input, .login-box .select-box select {
+    border-bottom: 1px solid #000;
+}
+
+.login-box .user-box label {
+    color: #000;
+}
+
+.login-box .select-box label {
+    color: #000;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+    color: #000;
+}
+  
+form input[type="submit"], input[type="button"] {
+    color: #000;
+    border: solid 1px #000;
+}
+
+form input[type="submit"]:hover, input[type="button"]:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    background: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+  
+.card .user-box input, .card .select-box select {
+    border-bottom: 1px solid #000;
+}
+
+.card .user-box label {
+    color: #000;
+}
+
+.card .select-box label {
+    color: #000;
+}
+
+.card .user-box input:focus ~ label,
+.card .user-box input:valid ~ label {
+    color: #000;
+}
+
+.loadBalancer {
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+input[type="number"], select {
+    border-bottom: 2px solid #000;
+}
+
+tr th {
+    color: #fff;
+    background-color: #333;
+}
+
+tr {
+    background-color: #f5f5f5;
+}
+
+a:link {
+  color: blue;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+.item {
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,.2);
+}
+
+.item:hover {
+    background-color: #f5f5f5;
+}
